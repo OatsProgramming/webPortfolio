@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './projects.module.css'
+import styles from './gif.module.css'
 import Image from "next/image";
 
 export default function Gif({ initial, gif, alt, link }: GifProps) {

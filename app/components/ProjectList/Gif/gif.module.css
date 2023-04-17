@@ -1,0 +1,32 @@
+/* --project-img-size ( check global ) */
+.container {
+    overflow: hidden;
+    width: calc(var(--project-img-size) * 1rem);
+    height: calc(var(--project-img-size) * 0.56rem);
+    position: relative;
+}
+
+.static {
+    position: absolute;
+    z-index: 99;
+    aspect-ratio: 135/76;
+    top: 0;
+    left: 0;
+    width: calc(var(--project-img-size) * 1rem);
+    height: calc(var(--project-img-size) * 0.56rem);
+    transition: all 200ms ease
+}
+
+.dynamic {
+    position: absolute;
+    z-index: 0;
+    aspect-ratio: 135/76;
+    top: 0;
+    left: 0;
+    width: calc(var(--project-img-size) * 1rem);
+    height: calc(var(--project-img-size) * 0.56rem)
+}
+
+.static:hover {
+    opacity: 0;
+}
