@@ -1,8 +1,6 @@
 .grid {
     position: relative;
     display: grid;
-    width: 100%;
-    height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
@@ -12,7 +10,6 @@
     object-fit: contain;
     width: 100%;
     height: 100%;
-    /* border: 1px solid red; */
     margin: auto 0;
     z-index: -99;
     grid-column: 2;
@@ -27,6 +24,10 @@
     top: 100px;
     padding: 1rem;
     transition: all 200ms ease;
+}
+
+.textbox h1 {
+    font-size: large;
 }
 
 .word {
@@ -68,6 +69,10 @@
     .textbox {
         font-size: xx-large;
         padding-left: 5rem;
+    }
+
+    .textbox h1 {
+        font-size: x-large
     }
 }
 

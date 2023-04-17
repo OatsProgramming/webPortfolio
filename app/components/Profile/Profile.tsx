@@ -20,14 +20,14 @@ export default function Profile() {
     }
 
     return (
-        <div className={styles['grid']}>
+        <section className={styles['grid']}>
             <div className={styles['textbox']}>
                 <h1>Hi there! I'm</h1>
                 <AnimateText go={go} toggleGo={toggleGo} text={name}/>
                 <AnimateText go={!go} toggleGo={toggleGo} text={description}/>
             </div>
             <Image src={profile} alt='Profile image' className={styles['profile']} />
-        </div>
+        </section>
     )
 }
 
