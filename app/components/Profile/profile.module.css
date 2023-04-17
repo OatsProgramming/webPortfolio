@@ -1,0 +1,44 @@
+.profile {
+    position: relative;
+    object-fit: contain;
+    width: 50%;
+    height: 50%;
+    border: 1px solid red;
+    margin: auto 0;
+    z-index: -99;
+}
+
+.word {
+    /* --charCount must be given via style property */
+    /* Convert value to character css unit */
+    width: calc(var(--charCount) * 1ch);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+.animate {
+    /* --charCount must be given via style property */
+    animation: typing 2s steps(var(--charCount)), blinking 0.5s step-end infinite;
+}
+
+/* Animations */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    .profile {
+        filter: invert(1);
+    }
+}
