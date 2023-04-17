@@ -20,16 +20,8 @@ export default function Profile() {
     }
 
     return (
-        <div style={{
-            width: '100vw',
-            height: '100vh',
-            display: 'flex',
-            justifyContent: 'space-between',
-        }}>
-            <div style={{
-                border: '1px solid black',
-
-            }}>
+        <div className={styles['grid']}>
+            <div className={styles['textbox']}>
                 <h1>Hi there! I'm</h1>
                 <AnimateText go={go} toggleGo={toggleGo} text={name}/>
                 <AnimateText go={!go} toggleGo={toggleGo} text={description}/>

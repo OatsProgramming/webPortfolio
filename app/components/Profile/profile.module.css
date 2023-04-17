@@ -1,11 +1,32 @@
-.profile {
+.grid {
     position: relative;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.profile {
+    position: absolute;
     object-fit: contain;
-    width: 50%;
-    height: 50%;
-    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
     margin: auto 0;
     z-index: -99;
+    grid-column: 2;
+    grid-row: 2 / 3;
+    transition: all 200ms ease;
+
+}
+
+.textbox {
+    /* "absolute" in order to not affect the size of profile img */
+    position: absolute;
+    top: 100px;
+    padding: 1rem;
+    transition: all 200ms ease;
 }
 
 .word {
@@ -40,5 +61,19 @@
 @media(prefers-color-scheme: dark) {
     .profile {
         filter: invert(1);
+    }
+}
+
+@media (min-width: 768px){
+    .textbox {
+        font-size: xx-large;
+        padding-left: 5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .profile{
+        transform: scale(1.5);
+        top: 1rem;
     }
 }
