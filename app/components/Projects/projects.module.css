@@ -86,5 +86,37 @@
     justify-items: stretch;
     align-items: center;
     height: 100vh;
-    
+}
+
+.swipeHint {
+    animation: swipeHint 1s ease 1s;
+}
+
+.swipeIcon {
+    width: 10rem;
+    position: absolute;
+    z-index: 100;
+    animation: swipeGesture 1s ease 1s;
+    transform-origin: top center;
+    right: 5rem;
+    opacity: 0;
+}
+
+@keyframes swipeGesture {
+    0%, 100% {
+        transform: translateX(0), rotate(0);
+    }
+    75% {
+        transform: translateX(-5rem) rotate(-10deg);
+        opacity: 1;
+    }
+}
+
+@keyframes swipeHint {
+   0%, 100% {
+    transform: translateX(0);
+   }
+   75% {
+    transform: translateX(-1rem)
+   }
 }
