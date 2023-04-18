@@ -26,7 +26,7 @@ export default function Profile() {
                 <AnimateText go={go} toggleGo={toggleGo} text={name}/>
                 <AnimateText go={!go} toggleGo={toggleGo} text={description}/>
             </div>
-            <Image src={profile} alt='Profile image' className={styles['profile']} />
+            <Image src={profile} alt='Profile image' className={`${styles['profile']} invert`} />
         </section>
     )
 }

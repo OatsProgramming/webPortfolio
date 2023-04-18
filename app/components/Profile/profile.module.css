@@ -59,12 +59,6 @@
     }
 }
 
-@media(prefers-color-scheme: dark) {
-    .profile {
-        filter: invert(1);
-    }
-}
-
 @media (min-width: 768px){
     .textbox {
         font-size: xx-large;

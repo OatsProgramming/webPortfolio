@@ -23,9 +23,17 @@ section {
   display: none;
 }
 
+.gray {
+  filter: grayscale(1) opacity(0.5)
+}
+
 @media(prefers-color-scheme: dark){
   html {
+    background-color: rgba(13,17,23,255);
     color-scheme: dark;
+  }
+  .invert {
+    filter: invert(1);
   }
 }
 

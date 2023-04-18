@@ -15,6 +15,7 @@ type GifProps = {
 
 type IconProps = {
     size?: number,
+    gray?: boolean,
     iconName: 'html' | 'css' | 'js' | 'ts' | 'react' 
             | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr',
 } 
