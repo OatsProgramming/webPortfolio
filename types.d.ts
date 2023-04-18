@@ -12,10 +12,11 @@ type GifProps = {
     icons: string[],
 }
 
+type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react' 
+                | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr'
 
 type IconProps = {
     size?: number,
-    gray?: boolean,
-    iconName: 'html' | 'css' | 'js' | 'ts' | 'react' 
-            | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr',
+    iconName: IconNames,
+    isLoading?: boolean
 } 

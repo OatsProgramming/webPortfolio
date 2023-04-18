@@ -27,6 +27,16 @@ section {
   filter: grayscale(1) opacity(0.5)
 }
 
+.icon {
+  opacity: 1;
+  transition: width 1s ease, opacity 10s ease
+}
+
+.loading {
+  opacity: 0
+}
+
+
 @media(prefers-color-scheme: dark){
   html {
     background-color: rgba(13,17,23,255);
