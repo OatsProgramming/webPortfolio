@@ -61,19 +61,18 @@
 }
 
 .swipeHint {
-    animation: swipeHint 1s ease 1s;
+    animation: swipeHint 2s ease 0.5s;
 }
 
 .swipeIcon {
     width: 10rem;
     position: absolute;
     z-index: 100;
-    animation: swipeGesture 1s ease 1s;
+    animation: swipeGesture 2s ease 0.5s;
     transform-origin: top center;
     right: 5rem;
     bottom: 12rem;
     opacity: 0;
-    
 }
 
 @media (max-width: 500px) {
@@ -88,7 +87,7 @@
         transform: translateX(0), rotate(0);
     }
     75% {
-        transform: translateX(-5rem) rotate(-10deg);
+        transform: translateX(-15rem) rotate(-10deg);
         opacity: 1;
     }
 }
@@ -98,6 +97,6 @@
     transform: translateX(0);
    }
    75% {
-    transform: translateX(-1rem)
+    transform: translateX(-5rem)
    }
 }
