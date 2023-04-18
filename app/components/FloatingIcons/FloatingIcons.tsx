@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react';
-import Icon from './Icons/Icon'
+import Icon from '../Icons/Icon'
 import styles from './floatingIcons.module.css'
 import Marquee, { Motion, randomIntFromInterval } from "react-marquee-slider";
 
