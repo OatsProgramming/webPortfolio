@@ -1,7 +1,7 @@
-import blogGif from '@/public/blogSpaceGif.gif'
-import blogInitial from '@/public/blogSpace.png'
-import todoGif from '@/public/todoGif.gif'
-import todoInitial from '@/public/todo.png'
+import blogGif from '@/public/projectGifs/blogSpaceGif.gif'
+import blogInitial from '@/public/projectGifs/blogSpace.png'
+import todoGif from '@/public/projectGifs/todoGif.gif'
+import todoInitial from '@/public/projectGifs/todo.png'
 
 const GifList: GifProps[] = [
     {

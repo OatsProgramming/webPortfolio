@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image"
-import profile from '@/public/profile.svg'
+import profile from '@/public/profile/profile.svg'
 import styles from './profile.module.css'
 import { useState } from "react"
 import AnimateText from "./AnimateText"
