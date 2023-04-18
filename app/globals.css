@@ -28,3 +28,9 @@ section {
     color-scheme: dark;
   }
 }
+
+@media(max-width: 768px) {
+  :root {
+    --project-img-size: 25;
+  }
+}

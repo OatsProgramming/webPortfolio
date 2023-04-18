@@ -35,7 +35,7 @@ export default function Projects() {
 
     return (
         <>
-            <div className={`${styles['grid']} ${isInView && styles['swipeHint']}`}>
+            <div className={`${styles['main']} ${isInView && styles['swipeHint']}`}>
                 {/* Give user swipe hint */}
                 <div className={`${isInView && styles['swipeIcon']}`}>
                     {isInView && (
@@ -72,9 +72,9 @@ export default function Projects() {
                             <div className={styles['container']}>
                                 <Gif {...GifList[gifIndex]} />
                                 {/* Reference this for isInView */}
-                                <div ref={ref}>
+                                <p ref={ref}>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fuga commodi, expedita cupiditate neque molestiae assumenda eius exercitationem suscipit. Optio, ad? Id, veniam fugiat?
-                                </div>
+                                </p>
                             </div>
                         </m.div>
                     </AnimatePresence>
