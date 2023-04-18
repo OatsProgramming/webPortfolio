@@ -1,4 +1,4 @@
-import FloatingIcons from "../FloatingIcons/FloatingIcons";
+import FloatingIcons from "./FloatingIcons/FloatingIcons";
 import FGProfile from "./FGProfile";
 
 export default function Profile() {

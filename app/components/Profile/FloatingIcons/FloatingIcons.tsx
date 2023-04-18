@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react';
-import Icon from '../Icons/Icon'
+import Icon from '../../Icons/Icon'
 import styles from './floatingIcons.module.css'
 import Marquee, { Motion, randomIntFromInterval } from "react-marquee-slider";
 
@@ -18,7 +18,7 @@ export default function FloatingIcons() {
             else if (window.innerWidth < 768) setSize(75)
             else if (window.innerWidth < 1024) setSize(100)
         }
-        
+
         window.addEventListener('resize', changeSize)
         return () => window.removeEventListener('resize', changeSize)
     }, [])
@@ -26,15 +26,16 @@ export default function FloatingIcons() {
     return (
         <>
             <div className={styles['bg']}>
-                {/* Ignore: it seems that mightve not integrate typescript */}
-                <Marquee 
-                    velocity={12} 
-                    // @ts-ignore
-                    minScale={0.7} 
-                    maxScale={1}
-                    resetAfterTries={200} 
-                    scatterRandomly 
-                    onFinish={() => setIsLoading(false)}
+                <div className={styles['marqueeContainer']}>
+                    {/* Ignore: it seems that mightve not integrate typescript */}
+                    <Marquee
+                        velocity={12}
+                        // @ts-ignore
+                        minScale={0.7}
+                        maxScale={1}
+                        resetAfterTries={200}
+                        scatterRandomly
+                        onFinish={() => setIsLoading(false)}
                     >
                         {iconNames.map((iconName) => (
                             // Motion helps create wave like movement
@@ -50,10 +51,11 @@ export default function FloatingIcons() {
                                     buffer: 'transparent'
                                 }}
                             >
-                                <Icon iconName={iconName} isLoading={isLoading} size={size}/>
+                                <Icon iconName={iconName} isLoading={isLoading} size={size} />
                             </Motion>
                         ))}
-                </Marquee>
+                    </Marquee>
+                </div>
             </div>
         </>
     )
