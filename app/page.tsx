@@ -18,6 +18,8 @@ export default function Home() {
     <IconFn iconName={"nextjs"} size={200}/>
     <IconFn iconName={"zustand"} size={200}/>
     <IconFn iconName={"framer"} size={200}/>
+    <IconFn iconName={"swr"} size={500}/>
+    <IconFn iconName={"vite"} size={200}/>
     </>
   )
 }
