@@ -59,7 +59,7 @@ export default function Projects() {
                                 left: 0,
                                 right: 0,
                             }}
-                            onDragEnd={(e, info) => {
+                            onDragEnd={(_, info) => {
                                 const { offset, velocity } = info
                                 const swipePower = calculateSwipePower(offset.x, velocity.x)
                             

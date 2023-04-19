@@ -20,5 +20,13 @@ type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react'
 type IconProps = {
     size?: number,
     iconName: IconNames,
-    isLoading?: boolean
+    isLoading?: boolean,
+    isInBackground?: true
 } 
+
+type IconItems = {
+    [key: string]: {
+        img: StaticImageData,
+        link: string
+    }
+}

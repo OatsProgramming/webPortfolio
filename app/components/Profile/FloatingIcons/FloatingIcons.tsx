@@ -51,7 +51,7 @@ export default function FloatingIcons() {
                                     buffer: 'transparent'
                                 }}
                             >
-                                <Icon iconName={iconName} isLoading={isLoading} size={size} />
+                                <Icon iconName={iconName} isLoading={isLoading} size={size} isInBackground />
                             </Motion>
                         ))}
                     </Marquee>
