@@ -8,7 +8,6 @@ import slider from "@/lib/animationVariants/slider";
 import styles from './projects.module.css'
 const loadFeatures = () => import('@/lib/framerFeatures/domMax').then(mod => mod.default)
 
-
 export default function Projects() {
     // Create helper animation to let user know that object has swipe feature
     const ref = useRef(null)

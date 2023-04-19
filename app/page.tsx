@@ -1,3 +1,5 @@
+import Icon from "./components/Icons/Icon";
+import iconNames from "./components/Icons/iconNames";
 import FGProfile from "./components/Profile/FGProfile";
 import Profile from "./components/Profile/Profile";
 import Projects from "./components/ProjectList/ProjectList";
@@ -7,11 +9,14 @@ export default function Home() {
 
   return (
     <>
-      <Profile />
+      {/* <Profile /> */}
       {/* <FGProfile /> */}
-      <Projects />
+      {/* <Projects /> */}
       {/* <Profile /> */}
       {/* <FloatingIcons /> */}
+      {iconNames.map(icon => (
+        <Icon iconName={icon} />
+      ))}
     </>
   )
 }

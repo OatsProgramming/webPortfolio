@@ -14,8 +14,7 @@ type GifProps = {
     body: string,
 }
 
-type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react' 
-                | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr'
+type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react' | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr' | 'git' | 'github' | 'firebase'
 
 type IconProps = {
     size?: number,

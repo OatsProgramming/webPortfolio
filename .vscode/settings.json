@@ -2,5 +2,5 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "Default Dark+"
+  "workbench.colorTheme": "GitHub Dark Default"
 }

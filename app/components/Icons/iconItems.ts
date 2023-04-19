@@ -8,6 +8,9 @@ import framer from '@/public/techStack/framerIcon.svg'
 import swr from '@/public/techStack/swrIcon.svg'
 import vite from '@/public/techStack/viteIcon.svg'
 import ts from '@/public/techStack/tsIcon.svg'
+import firebase from '@/public/techStack/firebaseIcon.svg'
+import git from '@/public/techStack/gitIcon.svg'
+import github from '@/public/techStack/githubIcon.svg'
 
 // hashmap it
 const iconItems: IconItems = {
@@ -51,6 +54,18 @@ const iconItems: IconItems = {
         img: ts,
         link: "https://www.typescriptlang.org/",
     },
+    firebase: {
+        img: firebase,
+        link: "https://firebase.google.com/",
+    },
+    git: {
+        img: git,
+        link: "https://git-scm.com/"
+    },
+    github : {
+        img: github,
+        link: "https://github.com/OatsProgramming"
+    }
 }
 
 export default iconItems

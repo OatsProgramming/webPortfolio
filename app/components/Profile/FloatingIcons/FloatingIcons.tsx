@@ -3,9 +3,7 @@ import { useEffect, useState } from 'react';
 import Icon from '../../Icons/Icon'
 import styles from './floatingIcons.module.css'
 import Marquee, { Motion, randomIntFromInterval } from "react-marquee-slider";
-
-const iconNames: IconNames[] =
-    ['html', 'css', 'js', 'react', 'nextjs', 'zustand', 'framer', 'swr', 'vite', 'ts']
+import iconNames from '../../Icons/iconNames';
 
 export default function FloatingIcons() {
     const [isLoading, setIsLoading] = useState(true)

@@ -9,7 +9,7 @@ const GifList: GifProps[] = [
         initial: blogInitial,
         gif: blogGif,
         alt: "Blog Space",
-        icons: ['swr', 'nextjs', 'react', 'framer', 'zustand'],
+        icons: ['swr', 'nextjs', 'react', 'framer', 'zustand', 'firebase'],
         title: 'Blog Space',
         body: `
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur porttitor felis, sed lobortis augue porttitor at. Integer ut urna vitae dui condimentum congue. Integer hendrerit pharetra nulla eu dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque porta eleifend eros at interdum. Integer feugiat, sapien at volutpat volutpat, quam purus iaculis mi, vel dictum elit felis eu neque. Praesent facilisis posuere tempor. In rhoncus consequat elit, at porta erat lacinia eget. Mauris commodo, ligula ut posuere pretium, tortor libero lacinia ipsum, in luctus est ante vitae purus. Curabitur viverra aliquam feugiat. Quisque orci erat, commodo non faucibus non, rhoncus eget justo. Aenean ut nisi et tortor fringilla bibendum sed pellentesque enim. Maecenas vel rutrum velit. Cras faucibus mauris eget gravida ultricies. Mauris vel laoreet velit. Proin pharetra dapibus aliquet.
