@@ -15,7 +15,7 @@ type GifProps = {
     repo: string,
 }
 
-type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react' | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr' | 'git' | 'github' | 'firebase'
+type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react' | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr' | 'git' | 'github' | 'firebase' | 'cssModule'
 
 type IconProps = {
     size?: number,

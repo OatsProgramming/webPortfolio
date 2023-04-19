@@ -5,17 +5,17 @@ import Link from 'next/link'
 export default function Icon({ size = 100, iconName, isLoading, isInBackground }: IconProps) {
     // Icons that are hard to see in dark mode 
     // ( wont invert on its own unless svg is exported as component )
-    const darkMode: IconNames[] = ['nextjs', 'framer', 'swr', 'github']
-    const changeSize = (iconName === 'zustand') || (iconName === 'swr')
+    const darkMode = new Set<IconNames>(['nextjs', 'framer', 'swr', 'github', 'cssModule'])
+    const tooSmall = new Set<IconNames>(['swr', 'zustand', 'cssModule'])
+
     const imgComp = (
         <Image
             src={iconItems[iconName].img}
-            // If png, increase size by 2
-            width={`${changeSize ? size * 2 : size}`}
+            width={`${tooSmall.has(iconName) ? size * 2 : size}`}
             alt={iconName}
             className={`
                 icon
-                ${darkMode.includes(iconName) && 'invert'}
+                ${darkMode.has(iconName) && 'invert'}
                 ${isLoading && 'loading'}
             `} />
     )

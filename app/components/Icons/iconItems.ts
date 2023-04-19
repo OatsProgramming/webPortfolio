@@ -11,6 +11,7 @@ import ts from '@/public/techStack/tsIcon.svg'
 import firebase from '@/public/techStack/firebaseIcon.svg'
 import git from '@/public/techStack/gitIcon.svg'
 import github from '@/public/techStack/githubIcon.svg'
+import cssModule from '@/public/techStack/cssModuleIcon.svg'
 
 // hashmap it
 const iconItems: IconItems = {
@@ -65,6 +66,10 @@ const iconItems: IconItems = {
     github : {
         img: github,
         link: "https://github.com/OatsProgramming"
+    },
+    cssModule: {
+        img: cssModule,
+        link: "https://github.com/css-modules/css-modules"
     }
 }
 
