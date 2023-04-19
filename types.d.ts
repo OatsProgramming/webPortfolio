@@ -11,7 +11,7 @@ type GifProps = {
     link: string,
     icons: IconNames[],
     title: string,
-    body: string,
+    body: string | string[],
     repo: string,
 }
 
