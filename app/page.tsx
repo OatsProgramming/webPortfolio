@@ -7,8 +7,8 @@ export default function Home() {
 
   return (
     <>
-      {/* <Profile /> */}
-      <FGProfile />
+      <Profile />
+      {/* <FGProfile /> */}
       <Projects />
       {/* <Profile /> */}
       {/* <FloatingIcons /> */}

@@ -9,7 +9,9 @@ type GifProps = {
     gif: StaticImageData,
     alt: string,
     link: string,
-    icons: string[],
+    icons: IconNames[],
+    title: string,
+    body: string,
 }
 
 type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react' 
