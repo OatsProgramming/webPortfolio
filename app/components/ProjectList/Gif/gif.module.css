@@ -62,10 +62,33 @@
     max-width: 768px;
 }
 
+.link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 200ms ease-out
+}
+
+.link:hover {
+    transform: scale(1.25);
+    filter: drop-shadow(0 0 10px rgb(164, 164, 164))
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    .link:hover {
+        filter: drop-shadow(0 0 10px white)
+    }
+}
+
 @media (max-width: 500px) {
     .mainContainer {
-       position: relative;
-       right: 3rem;
-       width: fit-content;
+        position: relative;
+        right: 3rem;
+        width: fit-content;
     }
 }

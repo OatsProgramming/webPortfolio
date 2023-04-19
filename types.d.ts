@@ -12,6 +12,7 @@ type GifProps = {
     icons: IconNames[],
     title: string,
     body: string,
+    repo: string,
 }
 
 type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react' | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr' | 'git' | 'github' | 'firebase'
