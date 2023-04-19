@@ -5,20 +5,29 @@ import styles from './floatingIcons.module.css'
 import Marquee, { Motion, randomIntFromInterval } from "react-marquee-slider";
 import iconNames from '../../Icons/iconNames';
 
+function changeSize() {
+    if (typeof window !== 'undefined'){
+        const width = window.innerWidth
+        if (width < 460)        return 40
+        else if (width < 640)   return 60
+        else if (width < 768)   return 75
+        else                    return 100
+    }
+}
+
 export default function FloatingIcons() {
     const [isLoading, setIsLoading] = useState(true)
-    const [size, setSize] = useState(60)
+    // Get initial size when site loads
+    const [size, setSize] = useState(changeSize)
 
     useEffect(() => {
-        // Account for window size
-        function changeSize() {
-            if (window.innerWidth < 640) setSize(60)
-            else if (window.innerWidth < 768) setSize(75)
-            else if (window.innerWidth < 1024) setSize(100)
+        // Account for window size change
+        function handleEvent() {
+           setSize(changeSize)
         }
 
-        window.addEventListener('resize', changeSize)
-        return () => window.removeEventListener('resize', changeSize)
+        window.addEventListener('resize', handleEvent)
+        return () => window.removeEventListener('resize', handleEvent)
     }, [])
 
     return (
@@ -30,7 +39,6 @@ export default function FloatingIcons() {
                         velocity={12}
                         // @ts-ignore
                         minScale={0.7}
-                        maxScale={1}
                         resetAfterTries={200}
                         scatterRandomly
                         onFinish={() => setIsLoading(false)}
@@ -42,7 +50,7 @@ export default function FloatingIcons() {
                                 initDeg={randomIntFromInterval(0, 360)}
                                 direction={Math.random() > 0.5 ? "clockwise" : "counterclockwise"}
                                 velocity={10}
-                                radius={40}
+                                radius={35}
                                 backgroundColors={{
                                     earth: 'transparent',
                                     solarSystem: 'transparent',

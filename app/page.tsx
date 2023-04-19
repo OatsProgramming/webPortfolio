@@ -9,14 +9,14 @@ export default function Home() {
 
   return (
     <>
-      {/* <Profile /> */}
+      <Profile />
       {/* <FGProfile /> */}
-      {/* <Projects /> */}
+      <Projects />
       {/* <Profile /> */}
       {/* <FloatingIcons /> */}
-      {iconNames.map(icon => (
+      {/* {iconNames.map(icon => (
           <Icon key={icon} iconName={icon} />
-      ))}
+      ))} */}
     </>
   )
 }

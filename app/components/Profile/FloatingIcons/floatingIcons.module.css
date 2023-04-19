@@ -9,10 +9,14 @@
     z-index: -99;
 }
 
-.bg > * {
+.bg>* {
     filter: grayscale(1) opacity(0.5);
 }
 
 .marqueeContainer {
-    height: 60vh;
+    /* To make it less distracting */
+    height: 45vh;
+    -webkit-box-shadow: inset 0px -33px 16px -27px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px -33px 16px -27px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px -33px 16px -27px rgba(0, 0, 0, 0.75);
 }
