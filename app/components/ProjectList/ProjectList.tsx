@@ -14,7 +14,7 @@ export default function Projects() {
     const isInView = useInView(ref, { 
         // 0 - 1: (0) if element is partially in vp (1) if element is fully visible
         // Must be used in conjuction with "once" prop for this animation
-        amount: 1, 
+        amount: 0.9,       // When ref is 90% in vp
         // The amnt of times isInView will return true ( only once when set )
         once: true 
     })
