@@ -2,6 +2,7 @@ import Image from 'next/image'
 import iconItems from './iconItems'
 import Link from 'next/link'
 
+// For Marquee animation related css, check global
 export default function Icon({ size = 100, iconName, isLoading, isInBackground, overrideInvert = false }: IconProps) {
     // Icons that are hard to see in dark mode 
     // ( wont invert on its own unless svg is exported as component )

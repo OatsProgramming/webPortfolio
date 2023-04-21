@@ -29,7 +29,7 @@ section {
 
 .icon {
   opacity: 1;
-  transition: width 1s ease, opacity 10s ease
+  transition: width 1s ease, opacity 5s ease
 }
 
 .loading {

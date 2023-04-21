@@ -4,7 +4,7 @@ import styles from './about.module.css'
 // So that it can use pre-wrap
 const content = {
     bodyOne: `I am a Generalist: one that enjoys to explore and educate oneself with various topics like modern philosophical debates, psychology behind design, or web dev tech.`,
-    bodyTwo: `  Your person for the job: a multidisciplinary developer and ever-evolving designer. Check out my current tech stack!
+    bodyTwo: `  Your person for the job: a multidisciplinary developer and ever-evolving designer. Check out my current tech stack by opening that box there!
     `
 }
 
