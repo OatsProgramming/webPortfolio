@@ -36,3 +36,18 @@ type IconItems = Record<IconNames, {
     img: StaticImageData,
     link: string
 }>
+
+type Email = {
+    email: string,
+    name: string,
+    message: string,
+}
+
+type EmailPartial = Partial<Email>
+
+type Action = {
+    type: 'sending' | 'updating' | 'deleting',
+    newInfo?: EmailPartial,
+    form?: HTMLFormElement | null,
+    isDark?: boolean
+}
