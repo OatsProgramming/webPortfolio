@@ -26,7 +26,7 @@ export default function TechStack() {
                 )}
                 {iconNames.map(icon => (
                     <div className="link">
-                        <Icon key={icon} iconName={icon} size={75} />
+                        <Icon key={icon} iconName={icon} size={75} overrideInvert/>
                     </div>
                 ))}
             </div>

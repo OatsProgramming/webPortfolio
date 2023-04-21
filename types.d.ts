@@ -28,10 +28,11 @@ type IconProps = {
     size?: number,
     iconName: IconNames,
     isLoading?: boolean,
-    isInBackground?: true
+    isInBackground?: true,
+    overrideInvert?: boolean,
 } 
 
 type IconItems = Record<IconNames, {
-    img: StaticImageData | SVGElement,
+    img: StaticImageData,
     link: string
 }>
