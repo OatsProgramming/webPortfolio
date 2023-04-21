@@ -22,7 +22,7 @@ type GifProps = {
     repo: string,
 }
 
-type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react' | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr' | 'git' | 'github' | 'firebase' | 'cssModule'
+type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react' | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr' | 'git' | 'github' | 'firebase' | 'cssModule' | 'linkedin'
 
 type IconProps = {
     size?: number,

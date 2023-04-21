@@ -2,7 +2,7 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Default Dark+ Experimental",
   "workbench.iconTheme": "vscode-icons",
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
   "window.autoDetectColorScheme": true,
