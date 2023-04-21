@@ -2,5 +2,12 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "GitHub Dark Default"
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredHighContrastLightColorTheme": "Default Dark+",
+  "workbench.preferredLightColorTheme": "Default Dark+",
+  "typescript.format.semicolons": "remove",
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace"
 }

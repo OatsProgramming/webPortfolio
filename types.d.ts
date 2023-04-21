@@ -1,3 +1,10 @@
+type StaticImageData = {
+    src: string
+    height: number
+    width: number
+    blurDataURL?: string
+}
+
 type AnimateTextProps = {
     go: boolean,
     toggleGo: () => void,
@@ -24,9 +31,7 @@ type IconProps = {
     isInBackground?: true
 } 
 
-type IconItems = {
-    [key: string]: {
-        img: StaticImageData,
-        link: string
-    }
-}
+type IconItems = Record<IconNames, {
+    img: StaticImageData | SVGElement,
+    link: string
+}>

@@ -36,6 +36,16 @@ section {
   opacity: 0
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 200ms ease-out
+}
+
+.link:hover {
+  transform: scale(1.25);
+  filter: drop-shadow(0 0 10px rgb(164, 164, 164))
+}
 
 @media(prefers-color-scheme: dark){
   html {

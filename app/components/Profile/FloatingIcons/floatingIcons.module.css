@@ -9,7 +9,7 @@
     z-index: -99;
 }
 
-.bg>* {
+.bg > * {
     filter: grayscale(1) opacity(0.5);
 }
 
