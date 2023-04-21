@@ -18,7 +18,7 @@
 }
 
 .visible {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
 }
 
@@ -47,6 +47,18 @@
     .icons {
         background-color: aliceblue;
         box-shadow: inset 0px 0px 32px 11px rgba(25, 25, 25, 0.75);
+    }
+}
+
+@media (max-width: 640px) {
+    .visible {
+        height: 75vh
+    }
+}
+
+@media (min-width: 768px) {
+    .visible {
+        height: 60vh;
     }
 }
 

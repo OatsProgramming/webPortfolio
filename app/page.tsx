@@ -12,7 +12,7 @@ export default function Home() {
       <Profile />
       <Projects />
       <About />
-      <Projects />
+      {/* <About /> */}
     </div>
   )
 }
