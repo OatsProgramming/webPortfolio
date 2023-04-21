@@ -2,6 +2,8 @@ import blogGif from '@/public/projectGifs/blogSpaceGif.gif'
 import blogInitial from '@/public/projectGifs/blogSpace.png'
 import todoGif from '@/public/projectGifs/todoGif.gif'
 import todoInitial from '@/public/projectGifs/todo.png'
+import weatherIntial from '@/public/projectGifs/weather.png'
+import weatherGif from '@/public/projectGifs/weatherGif.gif'
 
 const GifList: GifProps[] = [
     {
@@ -24,8 +26,8 @@ Click the Github icon for more info.`,
     {
         link: "https://weather-app-nine-self.vercel.app/",
         // Change this once you've cleaned up the weather app ui
-        initial: blogInitial,
-        gif: blogGif,
+        initial: weatherIntial,
+        gif: weatherGif,
         alt: "Weather App",
         icons: ['nextjs', 'react', 'framer', 'ts'],
         title: 'Weather App',
