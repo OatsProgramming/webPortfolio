@@ -8,7 +8,7 @@ import iconNames from '../../Icons/iconNames';
 function changeSize() {
     if (typeof window !== 'undefined'){
         const width = window.innerWidth
-        if (width < 460)        return 40
+        if (width < 460)        return 45
         else if (width < 640)   return 60
         else if (width < 768)   return 75
         else                    return 100
@@ -28,7 +28,7 @@ export default function FloatingIcons() {
 
         window.addEventListener('resize', handleEvent)
         return () => window.removeEventListener('resize', handleEvent)
-    }, [])
+    }, [isLoading])
 
     return (
         <>
@@ -50,7 +50,10 @@ export default function FloatingIcons() {
                                 initDeg={randomIntFromInterval(0, 360)}
                                 direction={Math.random() > 0.5 ? "clockwise" : "counterclockwise"}
                                 velocity={10}
-                                radius={35}
+                                // Toggled around to find the sweet spot for loading
+                                // Seems like smaller the screen = 
+                                // smaller the radius and size must be for better loading
+                                radius={size === 45 ? 25 : 35}
                                 backgroundColors={{
                                     earth: 'transparent',
                                     solarSystem: 'transparent',
