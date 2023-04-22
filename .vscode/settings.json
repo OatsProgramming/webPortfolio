@@ -9,5 +9,7 @@
   "workbench.preferredHighContrastLightColorTheme": "Default Dark+",
   "workbench.preferredLightColorTheme": "Default Dark+",
   "typescript.format.semicolons": "remove",
-  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace"
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "files.autoSave": "afterDelay",
+  "autoprefixer.formatOnSave": true
 }

@@ -10,6 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     cursor: pointer;
     font-weight: bold;
@@ -44,6 +47,7 @@
     left: 10px;
     transform: scale(-1);
 }
+
 /* Button - END */
 
 .main {
@@ -52,6 +56,7 @@
 }
 
 .swipeHint {
+    -webkit-animation: swipeHint 2s ease 0.5s;
     animation: swipeHint 2s ease 0.5s;
 }
 
@@ -59,6 +64,7 @@
     width: 10rem;
     position: absolute;
     z-index: 100;
+    -webkit-animation: swipeGesture 2s ease 0.5s;
     animation: swipeGesture 2s ease 0.5s;
     transform-origin: top center;
     right: 5rem;
@@ -66,21 +72,52 @@
     opacity: 0;
 }
 
-@keyframes swipeGesture {
-    0%, 100% {
+@-webkit-keyframes swipeGesture {
+
+    0%,
+    100% {
         transform: translateX(0), rotate(0);
     }
+
     75% {
         transform: translateX(-15rem) rotate(-10deg);
         opacity: 1;
     }
 }
 
+@keyframes swipeGesture {
+
+    0%,
+    100% {
+        transform: translateX(0), rotate(0);
+    }
+
+    75% {
+        transform: translateX(-15rem) rotate(-10deg);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes swipeHint {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(-5rem)
+    }
+}
+
 @keyframes swipeHint {
-   0%, 100% {
-    transform: translateX(0);
-   }
-   75% {
-    transform: translateX(-5rem)
-   }
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(-5rem)
+    }
 }

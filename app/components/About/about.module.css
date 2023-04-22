@@ -15,11 +15,11 @@
     font-size: 1em;
 }
 
-.text > p {
+.text>p {
     max-width: 768px;
 }
 
-.text > i:first-of-type {
+.text>i:first-of-type {
     font-weight: 900;
 }
 
@@ -28,8 +28,8 @@
         font-size: 1.2em;
     }
 
-    .text > h1,
-    .text > h2 {
+    .text>h1,
+    .text>h2 {
         font-size: 2em;
     }
 
@@ -44,4 +44,3 @@
         flex-direction: row;
     }
 }
-

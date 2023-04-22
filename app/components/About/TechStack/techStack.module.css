@@ -34,13 +34,26 @@
 }
 
 .ping {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
+
+@-webkit-keyframes ping {
+
+    75%,
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
 @keyframes ping {
-  75%, 100% {
-    transform: scale(3);
-    opacity: 0;
-  }
+
+    75%,
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
