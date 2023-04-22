@@ -29,7 +29,7 @@ export default function Contact() {
 
     return (
         <section className={styles['container']}>
-            <h1>Let's Touch Base!</h1>
+            <h1>Let's chat!</h1>
             <form ref={formRef} className={styles['form']}>
                 <div className={styles['textField']}>
                     <input type="email" id="email" name='password' placeholder=" " 
