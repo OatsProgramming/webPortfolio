@@ -6,8 +6,7 @@ import Icon from '../../Icons/Icon';
 
 const Gif = forwardRef(({ initial, gif, alt, link, title, body, icons, repo }: GifProps, ref: ForwardedRef<HTMLDivElement>) => {
     return (
-        // Use this as reference for "isInView"
-        <div className={styles['mainContainer']} ref={ref} >
+        <div className={styles['mainContainer']} >
             {/* Image */}
             <div className={styles['gifContainer']}>
                 {/* Always add "rel='noreferrer noopener'" attribute to prevent tabnabbing */}
@@ -17,7 +16,8 @@ const Gif = forwardRef(({ initial, gif, alt, link, title, body, icons, repo }: G
                 </Link>
             </div>
             {/* Text */}
-            <div className={styles['textContainer']}>
+            {/* Using this as inView ref instead to be more mobile friendly */}
+            <div className={styles['textContainer']} ref={ref}>
                 {/* Title */}
                 <div className={styles['flex']}>
                     <h1 style={{ display: 'inline-block' }}>{title}</h1>

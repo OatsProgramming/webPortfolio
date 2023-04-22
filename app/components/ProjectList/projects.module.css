@@ -1,3 +1,29 @@
+.main {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.swipeHint {
+    -webkit-animation: swipeHint 2s ease 0.5s;
+    animation: swipeHint 2s ease 0.5s;
+}
+
+.swipeIcon {
+    width: 10rem;
+    position: absolute;
+    z-index: 100;
+    -webkit-animation: swipeGesture 2s ease 0.5s;
+    animation: swipeGesture 2s ease 0.5s;
+    transform-origin: top center;
+    right: 5rem;
+    bottom: 12rem;
+    opacity: 0;
+}
+
 /* Buttons - START */
 .next,
 .prev {
@@ -49,28 +75,6 @@
 }
 
 /* Button - END */
-
-.main {
-    position: relative;
-    height: 100vh;
-}
-
-.swipeHint {
-    -webkit-animation: swipeHint 2s ease 0.5s;
-    animation: swipeHint 2s ease 0.5s;
-}
-
-.swipeIcon {
-    width: 10rem;
-    position: absolute;
-    z-index: 100;
-    -webkit-animation: swipeGesture 2s ease 0.5s;
-    animation: swipeGesture 2s ease 0.5s;
-    transform-origin: top center;
-    right: 5rem;
-    bottom: 12rem;
-    opacity: 0;
-}
 
 @-webkit-keyframes swipeGesture {
 

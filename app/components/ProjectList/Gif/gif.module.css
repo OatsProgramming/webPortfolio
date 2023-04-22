@@ -44,7 +44,6 @@
     align-items: center;
     padding: 5rem;
     gap: 3rem;
-    width: 100vw;
 }
 
 .iconsContainer {
@@ -79,7 +78,7 @@
     }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .mainContainer {
         position: relative;
         right: 3rem;
@@ -87,4 +86,4 @@
         width: -moz-fit-content;
         width: fit-content;
     }
-}
+} */

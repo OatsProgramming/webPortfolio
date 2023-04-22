@@ -66,3 +66,9 @@ section {
     --project-img-size: 25;
   }
 }
+
+@media(max-width: 450px) {
+  :root {
+    --project-img-size: 20;
+  }
+}

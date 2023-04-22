@@ -3,7 +3,7 @@ import { AnimatePresence, LazyMotion, m, useInView } from "framer-motion";
 import Gif from "./Gif/Gif";
 import GifList from './Gif/GifList';
 import { wrap } from 'popmotion'
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import slider from "@/lib/animationVariants/slider";
 import styles from './projects.module.css'
 const loadFeatures = () => import('@/lib/framerFeatures/domMax').then(mod => mod.default)
@@ -46,7 +46,8 @@ export default function Projects() {
                 <LazyMotion features={loadFeatures} >
                     <AnimatePresence custom={direction} initial={false}>
                         <m.div
-                            style={{ position: 'absolute' }}
+                            // For drag, add "touchAction: none" for touch support
+                            style={{ position: 'absolute', touchAction: "none" }}
                             custom={direction}
                             variants={slider}
                             initial='enter'
