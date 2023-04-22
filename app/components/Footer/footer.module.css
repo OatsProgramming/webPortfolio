@@ -37,3 +37,9 @@
 .textContainer {
     gap: 1rem;
 }
+
+@media (max-width: 450px) {
+    .textContainer {
+        font-size: small;
+    }
+}
