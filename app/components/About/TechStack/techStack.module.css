@@ -13,13 +13,20 @@
     height: 0;
     margin-bottom: 2rem;
     width: 0;
-    /* background-color: rgb(203, 203, 203); */
     border-radius: 10px;
 }
 
 .visible {
-    height: 60vh;
+    height: auto;
     width: 100%;
+}
+
+.notClickable {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transform: translateY(10rem);
 }
 
 .box {
@@ -63,28 +70,8 @@
     }
 }
 
-@media (max-width: 640px) {
-    .visible {
-        height: 75vh
-    }
-}
-
-@media (min-width: 768px) {
-    .visible {
-        height: 60vh;
-    }
-}
-
 @media (min-width: 900px) {
     .visible {
         height: 70vh
-    }
-
-    .icons {
-        margin-bottom: 0;
-    }
-
-    .moveBox {
-        transform: translateY(-2.5rem);
     }
 }
