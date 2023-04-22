@@ -24,10 +24,6 @@
     transition: all 200ms ease;
 }
 
-.iconsContainer svg path {
-    background-color: red;
-}
-
 .iconsContainer svg:hover {
     scale: 0.9;
 }
@@ -102,5 +98,11 @@
     .textField textarea:focus,
     .textField textarea:not(:placeholder-shown) {
         height: 30vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .textField label {
+        font-size: small;
     }
 }
