@@ -1,5 +1,4 @@
 /* Gif - START */
-
 /* --project-img-size ( check global ) */
 .gifContainer {
     overflow: hidden;
@@ -38,7 +37,7 @@
 .mainContainer {
     display: flex;
     flex-wrap: wrap;
-    height: inherit;
+    height: auto;
     justify-content: center;
     align-items: center;
     gap: 3rem;
@@ -71,13 +70,6 @@
     gap: 1rem;
     align-items: center;
 }
-
-@media (min-width: 640px) and (orientation: landscape) and (max-width: 1024px) and (pointer: coarse) {
-    .mainContainer {
-        height: 200vh
-    }
-  }
-  
 
 @media (prefers-color-scheme: dark) {
     .link:hover {

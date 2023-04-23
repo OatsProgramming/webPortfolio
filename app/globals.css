@@ -1,3 +1,5 @@
+@import '@splidejs/react-splide/css';
+
 :root {
   --project-img-size: 35;
 }
