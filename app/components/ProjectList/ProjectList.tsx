@@ -3,9 +3,10 @@ import { AnimatePresence, LazyMotion, m, useInView } from "framer-motion";
 import Gif from "./Gif/Gif";
 import GifList from './Gif/GifList';
 import { wrap } from 'popmotion'
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import slider from "@/lib/animationVariants/slider";
 import styles from './projects.module.css'
+import doNothing from "@/lib/doNothing"
 const loadFeatures = () => import('@/lib/framerFeatures/domMax').then(mod => mod.default)
 
 export default function Projects() {
@@ -14,7 +15,7 @@ export default function Projects() {
     const isInView = useInView(ref, { 
         // 0 - 1: (0) if element is partially in vp (1) if element is fully visible
         // Must be used in conjuction with "once" prop for this animation
-        amount: 0.9,       // When ref is 90% in vp
+        amount: 0.75,       // When ref is 75% in vp
         // The amnt of times isInView will return true ( only once when set )
         once: true 
     })
@@ -46,8 +47,8 @@ export default function Projects() {
                 <LazyMotion features={loadFeatures} >
                     <AnimatePresence custom={direction} initial={false}>
                         <m.div
-                            // For drag, add "touchAction: none" for touch support
-                            style={{ position: 'absolute', touchAction: "none" }}
+                            // Remove touch events; it inteferes with drag for mobile
+                            style={{ touchAction: "none" }}
                             custom={direction}
                             variants={slider}
                             initial='enter'
@@ -74,10 +75,10 @@ export default function Projects() {
                         </m.div>
                     </AnimatePresence>
                 </LazyMotion>
-                <div className={`${styles['next']} invert`} onClick={() => paginate(1)}>
+                <div className={`${styles['next']} invert`} onPointerDown={() => paginate(1)} onClick={doNothing}>
                     {"‣"}
                 </div>
-                <div className={`${styles['prev']} invert`} onClick={() => paginate(-1)}>
+                <div className={`${styles['prev']} invert`} onPointerDown={() => paginate(-1)} onClick={doNothing}>
                     {"‣"}
                 </div>
             </div>

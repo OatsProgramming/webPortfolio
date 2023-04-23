@@ -11,8 +11,8 @@ const Gif = forwardRef(({ initial, gif, alt, link, title, body, icons, repo }: G
             <div className={styles['gifContainer']}>
                 {/* Always add "rel='noreferrer noopener'" attribute to prevent tabnabbing */}
                 <Link href={link} target='_blank' rel='noreferrer noopener'>
-                    <Image className={styles['static']} src={initial} alt={`${alt} (static)`} />
-                    <Image className={styles['dynamic']} src={gif} alt={`${alt} (gif)`} />
+                    <Image loading='eager' className={styles['static']} src={initial} alt={`${alt} (static)`} />
+                    <Image loading='eager' className={styles['dynamic']} src={gif} alt={`${alt} (gif)`} />
                 </Link>
             </div>
             {/* Text */}

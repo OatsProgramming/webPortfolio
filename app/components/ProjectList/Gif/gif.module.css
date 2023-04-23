@@ -6,7 +6,6 @@
     width: calc(var(--project-img-size) * 1rem);
     height: calc(var(--project-img-size) * 0.56rem);
     position: relative;
-    /* border: 1px solid red; */
 }
 
 .static {
@@ -39,11 +38,13 @@
 .mainContainer {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: inherit;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
     gap: 3rem;
+    cursor: -webkit-grab;
+    cursor: grab;
+    padding: 3rem;
 }
 
 .iconsContainer {
@@ -71,19 +72,16 @@
     align-items: center;
 }
 
+@media (min-width: 640px) and (orientation: landscape) and (max-width: 1024px) and (pointer: coarse) {
+    .mainContainer {
+        height: 200vh
+    }
+  }
+  
+
 @media (prefers-color-scheme: dark) {
     .link:hover {
         -webkit-filter: drop-shadow(0 0 10px white);
         filter: drop-shadow(0 0 10px white)
     }
 }
-
-/* @media (max-width: 500px) {
-    .mainContainer {
-        position: relative;
-        right: 3rem;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-    }
-} */

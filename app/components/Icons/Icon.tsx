@@ -11,6 +11,7 @@ export default function Icon({ size = 100, iconName, isLoading, isInBackground, 
 
     const imgComp = (
         <Image
+            loading='eager'
             src={iconItems[iconName].img}
             width={`${tooSmall.has(iconName) ? size * 2 : size}`}
             alt={iconName}

@@ -4,6 +4,7 @@ const slider = {
     enter: (direction: number) => ({
         x: direction > 0 ? 1000 : -1000,
         opacity: 0,
+        zIndex: -99,
     }),
     // Animate in the new post
     center: {
@@ -19,6 +20,7 @@ const slider = {
     exit: (direction: number) => ({
         x: direction > 0 ? -1000 : 1000,
         opacity: 0,
+        zIndex: -99,
     })
 }
 

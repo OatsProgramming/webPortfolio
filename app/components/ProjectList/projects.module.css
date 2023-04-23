@@ -1,10 +1,6 @@
 .main {
     position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    height: auto;
 }
 
 .swipeHint {
@@ -65,12 +61,12 @@
 }
 
 .next:hover {
-    right: 10px;
+    right: 0;
     transform: scale(1)
 }
 
 .prev:hover {
-    left: 10px;
+    left: 0;
     transform: scale(-1);
 }
 
