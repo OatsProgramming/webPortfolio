@@ -11,7 +11,7 @@ type AnimateTextProps = {
     text: string
 }
 
-type GifProps = {
+type ProjectItem = {
     initial: StaticImageData,
     gif: StaticImageData,
     alt: string,

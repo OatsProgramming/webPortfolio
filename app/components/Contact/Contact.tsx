@@ -40,8 +40,6 @@ export default function Contact() {
             <form ref={formRef} className={styles['form']}>
                 <div className={styles['textField']}>
                     <input type="email" id="email" name='password' placeholder=" "
-                        onPointerDown={handleClick}
-                        onClick={doNothing}
                         onChange={(e) => dispatch({
                             type: 'updating',
                             newInfo: { email: e.target.value }
@@ -51,8 +49,6 @@ export default function Contact() {
                 </div>
                 <div className={styles['textField']}>
                     <input type="text" name='name' placeholder=" "
-                        onPointerDown={handleClick}
-                        onClick={doNothing}
                         onChange={(e) => dispatch({
                             type: 'updating',
                             newInfo: { name: e.target.value }
@@ -62,8 +58,6 @@ export default function Contact() {
                 </div>
                 <div className={styles['textField']}>
                     <textarea id='message' placeholder=''
-                        onPointerDown={handleClick}
-                        onClick={doNothing}
                         onChange={(e) => dispatch({
                             type: 'updating',
                             newInfo: { message: e.target.value }

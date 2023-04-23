@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import styles from './gif.module.css'
+import styles from './projectComponent.module.css'
 import Image from "next/image";
 import { ForwardedRef, forwardRef } from 'react';
 import Icon from '../../Icons/Icon';
 
-const Gif = forwardRef(({ initial, gif, alt, link, title, body, icons, repo }: GifProps, ref: ForwardedRef<HTMLDivElement>) => {
+const ProjectComponent = forwardRef(({ initial, gif, alt, link, title, body, icons, repo }: ProjectItem, ref: ForwardedRef<HTMLDivElement>) => {
     return (
         <div className={styles['mainContainer']} >
             {/* Image */}
@@ -48,4 +48,4 @@ const Gif = forwardRef(({ initial, gif, alt, link, title, body, icons, repo }: G
     )
 })
 
-export default Gif
+export default ProjectComponent

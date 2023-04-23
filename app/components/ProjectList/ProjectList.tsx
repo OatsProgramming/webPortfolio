@@ -1,7 +1,7 @@
 'use client'
 import { useInView } from "framer-motion"
-import Gif from "./Gif/Gif"
-import GifList from './Gif/GifList'
+import ProjectComponent from "./ProjectComponent/ProjectComponent"
+import ProjectItems from './ProjectComponent/ProjectItems'
 import { useRef } from "react"
 import styles from './projects.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
@@ -29,9 +29,9 @@ export default function Projects() {
                     )}
                 </div>
                 <Splide options={{ rewind: true }}>
-                    {GifList.map(gif => (
-                        <SplideSlide key={gif.alt}>
-                            <Gif {...gif} />
+                    {ProjectItems.map(item => (
+                        <SplideSlide key={item.alt}>
+                            <ProjectComponent {...item} />
                         </SplideSlide>
                     ))}
                 </Splide>

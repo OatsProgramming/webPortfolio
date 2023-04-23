@@ -5,7 +5,7 @@ import todoInitial from '@/public/projectGifs/todo.png'
 import weatherIntial from '@/public/projectGifs/weather.png'
 import weatherGif from '@/public/projectGifs/weatherGif.gif'
 
-const GifList: GifProps[] = [
+const ProjectItems: ProjectItem[] = [
     {
         link: "https://blog-space-eta.vercel.app/",
         initial: blogInitial,
@@ -50,4 +50,4 @@ Take a yonder and click the link.`,
     },
 ]
 
-export default GifList 
+export default ProjectItems 
