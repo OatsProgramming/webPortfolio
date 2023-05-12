@@ -13,6 +13,8 @@ import git from '@/public/techStack/gitIcon.svg'
 import github from '@/public/techStack/githubIcon.svg'
 import cssModule from '@/public/techStack/cssModuleIcon.svg'
 import linkedin from '@/public/contact/linkedinIcon.svg'
+import nextauth from '@/public/techStack/nextauth.png'
+import prisma from '@/public/techStack/prisma.png'
 
 // hashmap it
 const iconItems: IconItems = {
@@ -75,7 +77,15 @@ const iconItems: IconItems = {
     linkedin: {
         img: linkedin,
         link: "https://www.linkedin.com/in/oatsprogramming"
-    }
+    },
+    nextauth : {
+        img: nextauth,
+        link: 'https://next-auth.js.org/'
+    },
+    prisma: {
+        img: prisma,
+        link: 'https://www.prisma.io/'
+    } 
 }
 
 export default iconItems

@@ -22,7 +22,7 @@ type ProjectItem = {
     repo: string,
 }
 
-type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react' | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr' | 'git' | 'github' | 'firebase' | 'cssModule' | 'linkedin'
+type IconNames = 'html' | 'css' | 'js' | 'ts' | 'react' | 'vite' | 'nextjs' | 'zustand' | 'framer' | 'swr' | 'git' | 'github' | 'firebase' | 'cssModule' | 'linkedin' | 'nextauth' | 'prisma'
 
 type IconProps = {
     size?: number,
