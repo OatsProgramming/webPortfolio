@@ -12,9 +12,7 @@ type AnimateTextProps = {
 }
 
 type ProjectItem = {
-    initial: StaticImageData,
-    gif: StaticImageData,
-    alt: string,
+    vidUrl: string,
     link: string,
     icons: IconNames[],
     title: string,

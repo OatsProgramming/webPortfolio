@@ -1,18 +1,31 @@
 import Link from 'next/link';
 import styles from './projectComponent.module.css'
 import Image from "next/image";
-import { ForwardedRef, forwardRef } from 'react';
+import { ForwardedRef, forwardRef, useRef, PointerEvent } from 'react';
 import Icon from '../../Icons/Icon';
 
-const ProjectComponent = forwardRef(({ initial, gif, alt, link, title, body, icons, repo }: ProjectItem, ref: ForwardedRef<HTMLDivElement>) => {
+const ProjectComponent = forwardRef(({ vidUrl, link, title, body, icons, repo }: ProjectItem, ref: ForwardedRef<HTMLDivElement>) => {
+
+    function togglePlay(e: PointerEvent<HTMLVideoElement>) {
+        const vid = e.target as HTMLVideoElement
+        if (vid.paused) vid.play()
+        else vid.pause()
+    }
+
     return (
         <div className={styles['mainContainer']} >
             {/* Image */}
             <div className={styles['gifContainer']}>
                 {/* Always add "rel='noreferrer noopener'" attribute to prevent tabnabbing */}
                 <Link href={link} target='_blank' rel='noreferrer noopener'>
-                    <Image loading='eager' className={styles['static']} src={initial} alt={`${alt} (static)`} />
-                    <Image loading='eager' className={styles['dynamic']} src={gif} alt={`${alt} (gif)`} />
+                    {/* <Image loading='eager' className={styles['static']} src={initial} alt={`${alt} (static)`} width={300} height={300}/> */}
+                    <video 
+                        onPointerOver={togglePlay}
+                        onPointerOut={togglePlay}
+                        className={styles['dynamic']} 
+                        src={vidUrl} 
+                        loop
+                    />
                 </Link>
             </div>
             {/* Text */}

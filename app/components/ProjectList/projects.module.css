@@ -4,16 +4,18 @@
 }
 
 .swipeHint {
-    -webkit-animation: swipeHint 2s ease 1s;
-    animation: swipeHint 2s ease 1s;
+    --duration: 2s;
+    --delay: 2s
+    -webkit-animation: swipeHint var(--duration) ease var(--delay);
+    animation: swipeHint var(--duration) ease var(--delay);
 }
 
 .swipeIcon {
     width: 10rem;
     position: absolute;
     z-index: 100;
-    -webkit-animation: swipeGesture 2s ease 1s;
-    animation: swipeGesture 2s ease 1s;
+    -webkit-animation: swipeGesture var(--duration) ease var(--delay);
+    animation: swipeGesture var(--duration) ease var(--delay);
     transform-origin: top center;
     right: 5rem;
     bottom: 12rem;

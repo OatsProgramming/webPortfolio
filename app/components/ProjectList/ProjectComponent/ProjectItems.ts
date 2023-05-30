@@ -1,35 +1,34 @@
-import blogGif from '@/public/projectGifs/blogSpaceGif.gif'
-import blogInitial from '@/public/projectGifs/blogSpace.png'
-import todoGif from '@/public/projectGifs/todoGif.gif'
-import todoInitial from '@/public/projectGifs/todo.png'
-import weatherIntial from '@/public/projectGifs/weather.png'
-import weatherGif from '@/public/projectGifs/weatherGif.gif'
-import underConstruction from '@/public/projectGifs/underConstruction.png'
-
 const ProjectItems: ProjectItem[] = [
     {
         link: "https://blog-space-eta.vercel.app/",
-        initial: blogInitial,
-        gif: blogGif,
-        alt: "Blog Space",
+        vidUrl: 'https://i.imgur.com/cI6VUuT.mp4',
         icons: ['swr', 'nextjs', 'react', 'framer', 'zustand', 'firebase', 'ts'],
         title: 'Blog Space',
         body: `A social media app that gives a user space to blog. Interact with other users by leaving snarky comments!
-
+        
 To sign in, you can either make an account or just type in the following credentials:
-
-Email: dummy@gmail.com
-Password: dummy123
-
-Click the Github icon for more info.`,
+        
+        Email: dummy@gmail.com
+        Password: dummy123
+        
+        Click the Github icon for more info.`,
         repo: "https://github.com/OatsProgramming/blog-space"
     },
     {
+        link: "https://pixel-planet.vercel.app/",
+        vidUrl: 'https://i.imgur.com/bnoFEdb.mp4',
+        icons: ['react', 'nextjs', 'zustand', 'ts', 'framer', 'vite'],
+        title: 'Pixel Planet',
+        body: `What better way to show off my programming and css skills than with a game? Though still in beta, you can explore the Old Town Market and buy some nifty stuff: just like you would with an ecommerce app!
+        
+Give it a go! 
+    
+Click the Github icon for more info.`,
+        repo: 'https://github.com/OatsProgramming/redhood-gameV2'
+    },
+    {
         link: "https://weather-app-nine-self.vercel.app/",
-        // Change this once you've cleaned up the weather app ui
-        initial: weatherIntial,
-        gif: weatherGif,
-        alt: "Weather App",
+        vidUrl: 'https://i.imgur.com/uBUYE3U.mp4',
         icons: ['nextjs', 'react', 'framer', 'ts'],
         title: 'Weather App',
         body: `Using clever data structures and algorithms, it's a weather app that fully utilizes the OpenWeather API to give you accurate weather data in the most user-friendly possible. 
@@ -39,9 +38,7 @@ Take a look and see the cool animations made in the app!`,
     },
     {
         link: "https://todo-app-ruby-seven.vercel.app/",
-        initial: todoInitial,
-        gif: todoGif,
-        alt: "Todo App",
+        vidUrl: 'https://i.imgur.com/zMzNs91.mp4',
         icons: ['react', 'vite', 'framer', 'ts'],
         title: 'Todo App',
         body: `A fundamental classic to learning how to create CRUD applications. Due to it's simplistic nature, I've wanted to spice it up a bit with animations. 
@@ -51,14 +48,12 @@ Take a yonder and click the link.`,
     },
     {
         link: "https://under-construction-site.vercel.app/",
-        initial: underConstruction,
-        gif: underConstruction,
-        alt: "Foo Shop App",
+        vidUrl: 'https://i.imgur.com/0xybI4F.mp4',
         icons: ['react', 'nextjs', 'ts', 'zustand', 'nextauth', 'prisma'],
         title: 'Foo Shop',
         body: `This project is under construction. Please check out Github for more info.`,
-repo: 'https://github.com/OatsProgramming/foo-shop'
-    }
+        repo: 'https://github.com/OatsProgramming/foo-shop'
+    },
 ]
 
 // Add this to foo-shop when finish

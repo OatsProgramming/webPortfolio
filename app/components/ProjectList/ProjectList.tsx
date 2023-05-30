@@ -30,7 +30,7 @@ export default function Projects() {
                 </div>
                 <Splide options={{ rewind: true }}>
                     {ProjectItems.map(item => (
-                        <SplideSlide key={item.alt}>
+                        <SplideSlide key={item.title}>
                             <ProjectComponent {...item} />
                         </SplideSlide>
                     ))}
