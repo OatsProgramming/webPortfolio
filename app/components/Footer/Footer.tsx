@@ -6,8 +6,8 @@ export default function Footer() {
         <footer className={styles['container']}>
             <div className={styles['iconsContainer']}>
                 {footerIconNames.map(icon => (
-                    <div className={styles['link']}>
-                        <Icon key={icon} iconName={icon} size={25} />
+                    <div key={icon} className={styles['link']}>
+                        <Icon iconName={icon} size={25} />
                     </div>
                 ))}
             </div>

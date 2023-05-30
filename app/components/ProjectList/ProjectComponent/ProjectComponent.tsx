@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import styles from './projectComponent.module.css'
-import Image from "next/image";
-import { ForwardedRef, forwardRef, useRef, PointerEvent } from 'react';
+import { ForwardedRef, forwardRef, PointerEvent } from 'react';
 import Icon from '../../Icons/Icon';
 
 const ProjectComponent = forwardRef(({ vidUrl, link, title, body, icons, repo }: ProjectItem, ref: ForwardedRef<HTMLDivElement>) => {
@@ -18,12 +17,12 @@ const ProjectComponent = forwardRef(({ vidUrl, link, title, body, icons, repo }:
             <div className={styles['gifContainer']}>
                 {/* Always add "rel='noreferrer noopener'" attribute to prevent tabnabbing */}
                 <Link href={link} target='_blank' rel='noreferrer noopener'>
-                    {/* <Image loading='eager' className={styles['static']} src={initial} alt={`${alt} (static)`} width={300} height={300}/> */}
                     <video 
                         onPointerOver={togglePlay}
                         onPointerOut={togglePlay}
                         className={styles['dynamic']} 
-                        src={vidUrl} 
+                        // Work around for mobile (poster)
+                        src={`${vidUrl}#t=1`}
                         loop
                     />
                 </Link>

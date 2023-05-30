@@ -11,7 +11,7 @@ To sign in, you can either make an account or just type in the following credent
         Email: dummy@gmail.com
         Password: dummy123
         
-        Click the Github icon for more info.`,
+Click the Github icon for more info.`,
         repo: "https://github.com/OatsProgramming/blog-space"
     },
     {
